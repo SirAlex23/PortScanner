@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Port Scanner — Demo & Docs</title>
+  <link rel="stylesheet" href="port.css"> 
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="logo">PS</div>
+      <div class="title">
+        <h1>Port Scanner</h1>
+        <p class="lead">Demo y documentación del script para detección básica de puertos.</p>
+      </div>
+
+      <div class="actions">
+        <a id="github-link" class="btn btn-ghost" href="#" target="_blank" rel="noopener">Ver en GitHub</a>
+        <a id="download-zip" class="btn btn-primary" href="#" target="_blank" rel="noopener">⤓ Descargar ZIP</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="card">
+        <div class="meta"><strong>Tecnologías:</strong> Python 3 • socket • uso en laboratorio</div>
+
+        <div class="warn">
+          <strong>Importante:</strong> Solo usar en entornos controlados. Escanear hosts sin permiso puede ser ilegal.
+        </div>
+
+        <h2>Resumen</h2>
+        <p class="lead">Escanea puertos comunes en un host y reporta abiertos/cerrados. Ideal para pruebas en localhost o VMs.</p>
+
+        <h2>Cómo probar (local)</h2>
+        <ol>
+          <li>Clona el repo:
+            <pre class="code">git clone https://github.com/siralex23/portscanner.git
+cd portscanner</pre>
+          </li>
+          <li>Levanta un servidor de prueba (otra terminal):
+            <pre class="code">python3 -m http.server 8000</pre>
+          </li>
+          <li>Ejecuta:
+            <pre class="code">python3 portscanner.py
+# cuando lo pida: localhost</pre>
+          </li>
+        </ol>
+
+        <h2>Demo</h2>
+        <div class="grid-demos">
+          <div class="card">
+            <strong>Port Scanner / Demo</strong>
+            <div class="demo-wrap" >
+              <img src="demo portscanner.gif" alt="Demo Port Scanner" class="demo">
+            </div>
+            <p style="margin-top:10px;color:var(--muted);font-size:13px">
+                Captura animada de ejemplo del escáner en funcionamiento.
+            </p>
+            <p style="margin-top:8px">
+              <a class="download" href="#" id="zip-link-ps" target="_blank">⤓ Descargar ZIP</a>
+              <a class="btn btn-ghost" id="repo-link-ps" href="#" target="_blank" style="margin-left:8px">Ver código</a>
+            </p>
+          </div>
+        </div>
+
+      </section>
+
+      <aside class="card">
+        <h3>Recursos rápidos</h3>
+        <p style="font-size:13px;color:var(--muted);margin-top:8px">README: <a id="readme-link-ps" href="#" target="_blank">Ver README</a></p>
+        <p style="font-size:13px;color:var(--muted);margin-top:8px">Perfil: <a id="profile-link-ps" href="#" target="_blank">github.com/siralex23</a></p>
+      </aside>
+    </main>
+
+    <footer>
+      <small>Proyecto educativo • Uso responsable • No utilizar en sistemas ajenos sin permiso</small>
+    </footer>
+  </div>
+
+  <script>
+    // CONFIG: cambia si tu repo/branch/usuario son distintos
+    const GITHUB_USER = "siralex23";
+    const GITHUB_REPO = "portscanner";
+    const GITHUB_BRANCH = "main";
+
+    const base = `https://github.com/${encodeURIComponent(GITHUB_USER)}/${encodeURIComponent(GITHUB_REPO)}`;
+    const zip = `${base}/archive/refs/heads/${encodeURIComponent(GITHUB_BRANCH)}.zip`;
+    document.getElementById("github-link").href = base;
+    document.getElementById("download-zip").href = zip;
+    document.getElementById("zip-link-ps").href = zip;
+    document.getElementById("repo-link-ps").href = base;
+    document.getElementById("readme-link-ps").href = `${base}#readme`;
+    document.getElementById("profile-link-ps").href = `https://github.com/${GITHUB_USER}`;
+  </script>
+</body>
+</html>
+
