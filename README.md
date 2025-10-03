@@ -1,6 +1,7 @@
 # PortScanner
 
-**Descripción** Script educativo en Python que realiza un escaneo básico de puertos para comprobar si puertos comunes responden en un host. Diseñado para pruebas en entornos controlados (tu equipo, VMs o laboratorios) .Ademas dispone de una demo que muestra el funcionamiento del proyecto.  
+**Descripción** 
+Script educativo en Python que realiza un escaneo básico de puertos para comprobar si puertos comunes responden en un host. Diseñado para pruebas en entornos controlados (tu equipo, VMs o laboratorios) .Ademas dispone de una demo que muestra el funcionamiento del proyecto.  
 
 **Requisitos**   
 - Python 3.8+   (No necesita librerías externas; usa la librería estándar socket).
