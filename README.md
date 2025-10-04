@@ -13,9 +13,9 @@ Script educativo en Python que realiza un escaneo básico de puertos para compro
   
 2. Ejecuta en la terminal:
  
-3. ```bash
+   ```bash
    py portscanner.py
    
-4. Introduce la ip o el hostname cuando el script lo solicite
+3. Introduce la ip o el hostname cuando el script lo solicite
    
 **Importante**: En el archivo **index.html** existe un zip descargable con todos los datos para que se pueda chequear que el proyecto funciona
